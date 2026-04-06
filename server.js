@@ -26,7 +26,7 @@ const server = new McpServer({
 
 function run(cmd, cwd) {
   try {
-    return execSync(cmd, { cwd, encoding: "utf-8", timeout: 10000 }).trim();
+    return execSync(cmd, { cwd, encoding: "utf-8", timeout: 15000, maxBuffer: 1024 * 1024 }).trim();
   } catch {
     return null;
   }
