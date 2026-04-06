@@ -98,7 +98,7 @@ server.tool(
   "Scan project for TODO, FIXME, HACK, and XXX comments",
   { directory: z.string().describe("Absolute path to the project directory") },
   async ({ directory }) => {
-    const patterns = ["TODO", "FIXME", "HACK", "XXX"];
+    const patterns = ["TODO", "FIXME", "HACK", "XXX", "WARN", "DEPRECATED"];
     const files = walkFiles(directory);
     const results = [];
 
