@@ -37,7 +37,7 @@ function walkFiles(dir, ext, maxDepth = 5, depth = 0) {
   let results = [];
   try {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
-      if (entry.name.startsWith(".") || entry.name === "node_modules" || entry.name === "vendor") continue;
+      if (entry.name.startsWith(".") || ["node_modules", "vendor", "dist", "build", ".git"].includes(entry.name)) continue;
       const full = path.join(dir, entry.name);
       if (entry.isDirectory()) {
         results = results.concat(walkFiles(full, ext, maxDepth, depth + 1));
