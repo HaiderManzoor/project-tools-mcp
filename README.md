@@ -49,6 +49,16 @@ Once configured, you can ask Cursor things like:
 - "What dependencies does this project use?"
 - "Show me the recent git history"
 
+## Changelog
+
+### v1.1.0
+- Added WARN and DEPRECATED to todo_scan patterns
+- Excluded `dist/` and `build/` from file walks
+- Increased exec timeout for large repos
+
+### v1.0.0
+- Initial release with file_stats, todo_scan, dep_check, git_summary
+
 ## License
 
 MIT
