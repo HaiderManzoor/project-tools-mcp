@@ -19,7 +19,7 @@ import path from "path";
 
 const server = new McpServer({
   name: "project-tools-mcp",
-  version: "1.0.0",
+  version: "1.1.0",
 });
 
 // ── Helpers ──────────────────────────────────────────────────────
