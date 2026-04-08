@@ -51,7 +51,9 @@ function walkFiles(dir, ext, maxDepth = 5, depth = 0) {
 
 function countLines(filePath) {
   try {
-    return fs.readFileSync(filePath, "utf-8").split("\n").length;
+    const content = fs.readFileSync(filePath, "utf-8");
+    if (content.length === 0) return 0;
+    return content.split("\n").length;
   } catch {
     return 0;
   }
