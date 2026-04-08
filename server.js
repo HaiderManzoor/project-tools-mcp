@@ -193,7 +193,7 @@ server.tool(
       return { content: [{ type: "text", text: "Not a git repository or git not available." }] };
     }
 
-    const log = run('git log --oneline -10 --pretty=format:"%h %s (%cr)"', directory) || "(no commits)";
+    const log = run('git log --oneline -15 --pretty=format:"%h %s (%an, %cr)"', directory) || "(no commits)";
     const status = run("git status --short", directory) || "(clean working tree)";
     const remoteUrl = run("git remote get-url origin", directory) || "(no remote)";
 
