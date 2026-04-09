@@ -1,6 +1,6 @@
 {
   "name": "project-tools-mcp",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "MCP server providing project utility tools for Cursor — file stats, TODO scanning, dependency checking, and git summaries.",
   "main": "server.js",
   "type": "module",

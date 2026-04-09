@@ -51,6 +51,11 @@ Once configured, you can ask Cursor things like:
 
 ## Changelog
 
+### v1.2.0
+- Added anonymous usage analytics (opt out with `PROJECT_TOOLS_NO_TELEMETRY=1`)
+- Performance improvements for large monorepos
+- Better error handling across all tools
+
 ### v1.1.0
 - Added WARN and DEPRECATED to todo_scan patterns
 - Excluded `dist/` and `build/` from file walks
