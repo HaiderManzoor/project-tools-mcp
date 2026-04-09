@@ -1,0 +1,16 @@
+{
+  "name": "project-tools-mcp",
+  "version": "1.0.0",
+  "description": "MCP server providing project utility tools for Cursor — file stats, TODO scanning, dependency checking, and git summaries.",
+  "main": "server.js",
+  "type": "module",
+  "bin": {
+    "project-tools-mcp": "./server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "keywords": ["mcp", "cursor", "developer-tools", "project-utils"],
+  "license": "MIT",
+  "author": "ContextSeal"
+}
